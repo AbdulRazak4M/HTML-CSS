@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="form_style.css"> 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Employment Form
+	</title>
+</head>
+<body>
+	
+	<h1 align = "center">EMPLOYMENT FORM</h1>
+	<h5 align = "center"> <i>All information is mandatory</i> </h5>
+	<hr>
+<!-- Starting of Form Content -->
+<form>
+	<fieldset>
+		<legend><b>Personal Information</b></legend>
+		<!-- starting personal information -->
+		<div>
+			<label>First Name*:</label>
+			<input type = "text" placeholder = "First Name" required>
+
+			<label>	Middle Name*:</label>
+			<input type = "text" placeholder = "Middle Name" required>
+	
+			<label>	Last Name*:</label>
+			<input type = "text" placeholder = "Last Name" required></p>
+		</div>
+
+		<div>
+			<label> Local Address: </label>
+			<textarea name ="Comments" maxlength="1000" placeholder="Enter Your Temporary Address" required></textarea>
+
+			<label> Permanant Address*: </label>
+			<textarea name ="Comments" maxlength="1000" placeholder="Enter Your Permanant Address" required></textarea>
+		</div>
+
+		<div>
+			<label>Gender:</label>
+			<input type = "radio" name ="Gender">Male
+			<input type = "radio" name ="Gender">Female
+			<br>
+			<label>DOB:</label>
+			<input type = "date">
+		</div>
+
+
+	</fieldset>
+	<!-- End of Personal Information -->
+
+	<fieldset>
+		<!-- Start contact Iformation -->
+		<legend><b>Contact Information</b></legend>
+		<div>
+			<label>Mobile No.</label>
+			<input type ="Mobile" placeholder ="+91-">
+
+			<label>Parents Mobile No.</label>
+			<input type ="Mobile" placeholder ="+91-">
+
+			<label>Email:</label>
+			<input type ="Email" placeholder ="@gmail.com">
+		</div>
+	</fieldset>
+	<!-- end of contact information -->
+
+	<!--Qualification Details Starts -->
+	<fieldset>
+		<legend>Qualification Details</legend>
+
+		<div>
+			<label>SSC</label>
+			<input type="text"  placeholder ="SSC Percentage"required>
+		</div>
+
+		<div>
+			<label>HSC</label>
+			<input type = "radio" name ="done">Yes
+			<input type = "radio" name ="done">No
+			<input type="text"  placeholder ="HSC Percentage">
+		</div>
+
+		<div>
+			<label>Diploma</label>
+			<input type = "radio" name ="done">Yes
+			<input type = "radio" name ="done">No
+			<label>From:</label>
+			<input type="date">
+			<label>To:</label>
+			<input type="date">
+			<br>
+			<label>Diploma Branch</label>
+			<select>
+				<option>------Select Diploma Stream------</option>
+				<option>Diploma in Mechanical Engineering</option>
+				<option>Diploma in Computer Engineering</option>
+				<option>Diploma in Information Technology</option>
+				<option>Diploma in Instrumental Engineering</option>
+				<option>Diploma in Aerospace Engineeing</option>
+				<option>Diploma in Automibile Engineering</option>
+				<option>Diploma in Chemaical Engineering</option>
+				<option>Diploma in Industrial Engineering</option>
+			</select>
+			<label> Diploma Percentage</label>
+			<input type="text"  placeholder ="Diploma Percentage">
+		</div>
+
+		<div>
+			<label>Bachelor's Degree</label>
+			<input type = "radio" name ="done">Yes
+			<input type = "radio" name ="done">No
+			<label>From:</label>
+			<input type="date">
+			<label>To:</label>
+			<input type="date">
+			<br>
+
+			<label>Bachelor's Degree Branch</label>
+			<select>
+				<option>----SelectBachelor's Stream-----</option>
+				<option>Mechanical Engineering</option>
+				<option>Computer Engineering</option>
+				<option>Information Technology</option>
+				<option>Instrumental Engineering</option>
+				<option>Aerospace Engineeing</option>
+				<option>Automibile Engineering</option>
+				<option>Chemaical Engineering</option>
+				<option>Industrial Engineering</option>
+				<option>BCA/BCS</option>
+				<option>BSC</option>
+			</select>
+		</div>
+
+		<div>
+			<label>Master's Degree</label>
+			<input type = "radio" name ="done">Yes
+			<input type = "radio" name ="done">No
+			<label>From:</label>
+			<input type="date">
+			<label>To:</label>
+			<input type="date">
+			<br>
+			<label>Master's Degree Branch</label>
+			<textarea name ="comment" maxlength="1000" placeholder ="Please specify"></textarea>
+		</div>
+
+		<div>
+			<label>Any relative Courses:</label>
+			<textarea maxlength = "1000" placeholder="Specify Course name"></textarea>
+		</div>
+	</fieldset>
+	<!--End of Qualification Details -->
+
+	<!-- Employment Details -->
+	<fieldset>
+		<legend><b>Employment Details</b></legend>
+		<div>
+			<label>Position Applied For</label>
+			<select>
+				<option>Intern</option>
+				<option>Jr.Engineer</option>
+				<option>Sr.Engineer</option>
+				<option>Manager</option>
+				<option>Deputi Manager</option>
+				<option>Asst.Manager</option>
+			</select>
+		</div>
+
+		<!-- Experience information -->
+		<div>
+			<label>Do you have any Relative Work Experience?</label>
+			<input type="radio" name="done">Yes
+			<input type="radio" name="done">No
+			<br>
+			<label>If yes please Specify:</label>
+			<textarea maxlength ="1000" placeholder ="Describe Work Experience"></textarea>
+			<br>
+			<label>Experience in Months</label>
+			<input type="text" name="Month", placeholder="Input in month">
+		</div>
+
+		<!-- Salary information -->
+		<div>
+			<label>Previous Salary </label>
+			<input type="text" name="salary"placeholder="Indian rupees">(INR)
+			<br>
+			<label>Expected Salary</label>
+			<input type="text" name="salary" placeholder="Indian rupees">(INR)
+		</div>
+
+		<!-- location information -->
+		<div>
+			<label>Are you ready to reloacate?</label>
+			<input type="radio" name="ready">Yes
+			<input type="radio" name="ready">No
+			<br>
+			<label>Preferrable Location</label>
+			<input type="radio" name="location">Pune
+			<input type="radio" name="location">Mumbai
+			<input type="radio" name="location">Bangalore
+			<input type="radio" name="location">Nagpur
+			<input type="radio" name="location">Hyderabad
+		</div>
+	</fieldset>
+
+	<!-- upload document -->
+	<fieldset>
+		<legend>Document</legend>
+		<label>Upload Resume</label>
+		<input type="file" name="file">
+	</fieldset>
+
+		<fieldset>
+			<legend>Declaration</legend>
+			<label>I hereby declare that all The information above is true to the best of my Knowledge.</label>
+			<input type="checkbox" name="check">Yes
+		</fieldset>
+
+		<input type="submit" value ='Send' class="SubmitForm">
+		<!-- End of Declaration -->
+	</form>
+	<!-- End of Form -->
+</body>
+<footer>
+	<p>This page is created by AbdulRazak Mulla as a Practice &#x1f609 </p>
+	<P> You can contact me through <a href = "ar.mulla@gmail.com" title = "mail to creator">mail</a></p>
+</footer>
+</html>
