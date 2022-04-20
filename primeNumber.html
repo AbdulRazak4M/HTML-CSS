@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prime Number</title>
+	<script type="text/javascript">
+		var no = 32;
+		var div = 2;
+		var flag = false;
+		while(div<no)
+		{
+			if((no%div) == 0)
+			{
+				flag = true;
+				break;
+			}
+			else{
+				div++;
+			}
+		}
+		if(flag)
+		{
+			document.write(no+ " is Not prime");
+		}
+		else
+		{
+			document.write(no+ "no is prime");
+		}
+		</script>
+</head>
+<body>
+
+</body>
+</html>

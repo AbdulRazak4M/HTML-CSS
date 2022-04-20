@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Palindrome</title>
+	<script type="text/javascript">
+		let num = 12321;
+		let no = num;
+		var rev = 0;
+		var rem = 0;
+		while(no != 0)
+		{
+			rem = no%10;
+			rev = rev*10+rem;
+			no = Math.floor(no/10) ;
+		}
+		document.write("After Reverse no is: " + rev);
+		document.write("<br>");
+		if(num == rev)
+		{
+			document.write("Number is palindrome");
+		}
+		else
+		{
+			document.write("Number is not palindrome");
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
