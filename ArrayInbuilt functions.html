@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array Inbuilt Funtions</title>
+	<script type="text/javascript">
+		//creating array dynamically through constructors
+		var arr =new Array(30,20,40,10,60,50);
+		// regular way to declare array
+		//var arr = [30,20,40,10,60,50];
+
+		//1.Calculate length of array
+		var len = arr.length;
+		document.write("The length of array is: "+len +"<hr>");
+		document.write("Before sorting array is:" + arr + "<hr>");
+		//2.sort array
+		arr.sort();
+		document.write("After sorting array is:" + arr + "<hr>");
+
+		//3.to add elementy at the end of array
+		arr.push(70,90,80);
+		document.write("After pushing new values array is:" + arr + "<hr>");
+
+		//4.remove the top most element of an array
+		var removed_ele = arr.pop();
+		document.write('The removed element is: '+ removed_ele+"<br>")
+		document.write("After removing (pop) last element is:" + arr + "<hr>");
+
+		//5.remove the first array index and shift all higher index to lower
+		var first_ele = arr.shift()
+		document.write('The First removed element is: '+ first_ele+"<br>")
+		document.write("After removing (shift()) First element is:" + arr + "<hr>");
+
+		//6.Add the first element array index and shift all higher index
+		arr.unshift(1000)
+		document.write("After adding (unshift()) First element is:" + arr + "<hr>");
+
+		//7.concat three arrays will create new array
+		var arr2 = new Array(100,200,300);
+		var arr3 = new Array(500,600,700);
+		var arr_new = arr.concat(arr2,arr3);
+		document.write("After concat (unshift()) 3 arrays new array is :" + arr_new + "<hr>");
+
+		//8.add new element in array ata specified location
+		arr_new.splice(2,0,5000,6000);
+		document.write("After splice(5000,6000) without override new array is:" + arr_new + "<hr>");
+
+		var del_arr = arr_new.splice(3,3,100,200,300);
+		document.write("After splice(5000,6000) the overriden values are :" + del_arr + "<br>");
+		document.write("After splice override new array is:" + arr_new + "<hr>");
+
+		//9.slice the array from start to end index
+		var slice_arr = arr_new.slice(2,8);
+		document.write("After slice(start 2,end <8) new array is:" + slice_arr + "<hr>");
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
