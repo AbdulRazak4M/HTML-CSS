@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Remove first element</title>
+	<script type="text/javascript">
+		var arr = new Array(10,20,30,40,50,60);
+		var newarr = new Array();
+		var len = arr.length;
+		document.write("Before removing element array is: "+arr+"<br />");
+		document.write("Length is: "+len+"<hr/>");
+		var firstele = arr[0];
+		for(var i =1, j=0; i < arr.length; i++,j++)
+		{
+			newarr[j] = arr[i]
+		}
+		// assign new array address to old array
+		arr = newarr;
+
+		document.write("After removing first element New array is: "+ arr+ "<br />");
+		document.write("Removed Element is: "+firstele+"<br/>");
+		len = arr.length;
+		document.write("New Length is: "+len+"<hr/>");
+		/*5.remove the first array index and shift all higher index to lower
+		var first_ele = arr.shift()
+		document.write('The First removed element is: '+ first_ele+"<br>")
+		document.write("After removing (shift()) First element is:" + arr + "<hr>");*/
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

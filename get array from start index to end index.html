@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>slicing array from start index to end index</title>
+	<script type="text/javascript">
+		var arr = new Array(10,20,30,40,50,60,70,80,90,100);
+		var startind = 2;
+		var endind = 8;
+		var newArr = new Array();
+		for(var  i = startind, j=0; i<endind; i++,j++)
+		{
+			newArr[j] = arr[i];
+		}
+		document.write("After slicing Array is from start index of "+ startind+" to end Index of "+endind+": "+newArr+"<hr />");
+		/* INBUILT METHOD
+		var slice_arr = arr_new.slice(2,8);
+		document.write("After slice(start 2,end <8) new array is:" + slice_arr + "<hr>");
+		*/
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Remove last element</title>
+	<script type="text/javascript">
+		var arr = new Array(10,20,30,40,50,60);
+		var len = arr.length;
+		document.write("Before removing element array is: "+arr+"<br />");
+		document.write("Length is: "+len+"<hr/>");
+		var newarr = new Array();
+		for(var i=0; i<len-1; i++)
+		{
+			newarr[i] = arr[i];
+		}
+		arr = newarr;
+		document.write("After removing array is: "+arr+"<br />");
+		var newlen = arr.length;
+		document.write("New Length is: "+newlen+"<hr/>");
+
+		/*4.remove the top<last> most element of an array by using inbuild function
+		var removed_ele = arr.pop();
+		document.write('The removed element is: '+ removed_ele+"<br>")
+		document.write("After removing (pop) last element is:" + arr + "<hr>");*/
+	</script>
+</head>
+<body>
+
+</body>
+</html>

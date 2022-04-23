@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add seperator between elements</title>
+	<script type="text/javascript">
+		var arr = new Array(10,20,30,40,50,60,70,80,90);
+		var sept = '_';
+		var arrwithsep = new Array();
+		var newlen = arr.length+(arr.length-1);
+		for(var i = 0, j=0; i < newlen; i++,j++)
+		{
+			arrwithsep[i] = arr[j];
+			++i;
+			arrwithsep[i]=sept;
+		}
+		document.write("Arrar with Seperator: "+ arrwithsep+"<hr/>");
+	</script>
+</head>
+<body>
+
+</body>
+</html>

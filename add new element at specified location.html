@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>insert at specified location</title>
+	<script type="text/javascript">
+		var arr = new Array(10,50,60,70,80,90);
+		var index = 2;
+		var iarr = [20,30,40];
+		var len = (arr.length)+(iarr.length);
+		document.write("Before adding element array is: "+arr+"<br />");
+		document.write("Length is: "+arr.length+"<hr/>");
+		document.write("The value to be added are: "+iarr+"and start index is :"+index+ "<br />");
+		document.write("Length is: "+iarr.length+"<hr/>");
+		var newarr = new Array();
+		var k = 0;
+		for(var i = 0, j=0; i<len; i++, j++)
+		{
+			if(i>=index && k<iarr.length)
+			{
+				newarr[i] = iarr[k];
+				k++;
+				j--;
+			}
+			else
+			{
+				newarr[i] = arr[j];
+			}
+		}
+		document.write("New Array after inserting element: "+ newarr+"<br/>");
+		document.write("Length is: "+newarr.length+"<hr/>");
+
+		/*InBUILT METHOD 
+		arr_new.splice(2,0,20,30,40);
+		document.write("After splice(5000,6000) without override new array is:" + arr_new + "<hr>");
+		*/
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Merge Arrays</title>
+	<script type="text/javascript">
+		/*/ we have concat() function as to merge arrays*/
+		var arr1 = new Array(10,20,30,40,50);
+		var arr2 = [60,70,80,90,100,200];
+		var mergarr = new Array();
+		var len1 = arr1.length;
+		var len2 = arr2.length;
+		document.write("First array is:" + arr1 + "<br>");
+		document.write("First array lengh:" + len1 + "<hr>");
+		document.write("Second array is:" + arr2 + "<br>");
+		document.write("Second array length:" + len2 + "<hr>");
+		for(var i=0; i<len1; i++)
+		{
+			mergarr[i] = arr1[i];
+		}
+		var k = len1;
+		for(var i=0; i<len2; i++)
+		{
+			mergarr[k] = arr2[i];
+			k++;
+		}
+
+		document.write("After merging new array is: "+ mergarr + "<br/>");
+		mlen = mergarr.length;
+		document.write("New Length is: "+mlen+"<hr />");
+		mergarr.sort();
+		document.write("After sort new array is: "+ mergarr + "<br/>");
+	</script>
+</head>
+<body>
+
+</body>
+</html>
