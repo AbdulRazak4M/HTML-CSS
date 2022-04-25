@@ -1,0 +1,39 @@
+<!-- find second largest  from the array-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Find Second Largest</title>
+	<script type="text/javascript">
+		var arr = new Array(10,20,50,60,70,80,90,100,70,60,70,80);
+		var max = arr[0];
+		var secmax = arr[0];
+		var len = arr.length;
+		function findSecondLargest()
+		{
+			for(var i =0; i < len; i++)
+			{
+				if(max < arr[i] )
+				{
+					max =arr[i];
+
+				}
+			}
+			for(var i=0; i<len ; i++)
+			{
+				if(arr[i] < max && arr[i] > secmax)
+				{
+					secmax = arr[i];
+				}
+			}
+			alert("Second max number is: "+ secmax);
+		}
+	</script>
+</head>
+<body>
+	<h1>Find Second Largest Element from array</h1>
+	<input type="button" name="secondLargest" Value ="find" onclick="findSecondLargest()">
+
+</body>
+</html>

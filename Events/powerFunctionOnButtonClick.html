@@ -1,0 +1,29 @@
+<!-- onbuttonclick show power of number using function -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Power onButtonClick</title>
+	<script type="text/javascript">
+		var base = 5;
+		var index =4;
+		var p = 1;
+		function power()
+		{
+			var v = document.getElementById("p");
+			for(var i =1; i<=index; i++)
+			{
+				p = p * base;
+			}
+			alert("the power of " +base + " to the " +index +" is: "+p);
+		}
+	</script>
+</head>
+<body>
+	<h1>Calculate Power</h1>
+	<input type="button" name="calculate" value="CalculatePower"  onclick="power()">
+	<p id= "p">Calculating the power</p>
+
+</body>
+</html>

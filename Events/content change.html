@@ -1,0 +1,22 @@
+<!-- change contne tby using previous content -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>content change</title>
+	<script type="text/javascript">
+		var prevData = "Welcome in India";
+		function updateHeading()
+		{
+			var v = document.getElementById("h");
+			v.innerHTML =(prevData+" 2022");
+		}
+	</script>
+</head>
+<body>
+	<h1 name ="title" id = "h">Welcome in India</h1>
+	<input type="button" name="changeHead" value = "click to change" onclick="updateHeading()">
+
+</body>
+</html>
