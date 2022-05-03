@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Operations</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        textarea{
+            border: 2px solid red;
+            width: 49%;
+            height: 100px;
+        }
+        .container2{
+            display: inline-block;
+            border: 2px solid blue;
+            width: 49%;
+        }
+        .container3{
+            display: inline-block;
+            border: 2px solid aqua;
+            width: 49%;
+
+        }
+        input[type="button"] {
+            width: 120px;
+            height: 50px;
+            background-color: green;
+            color: white;
+            font-weight: 100;
+            border-radius: 10px;
+            margin:20px;
+        }
+        input[type="button"]:hover {
+            background-color: purple;
+            color:white;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        input[type="text"]{
+            width: 600px;
+            margin: 20px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function countWords(){
+            var inp = document.getElementById("in").value;
+            var op = document.getElementById("show");
+            var len =inp.length;
+            op.innerHTML = "Your Text is: "+inp +" \nThe Lenght is: " +len;
+        }
+        // convert to upperCase
+        function convertUpper(){
+            var inp= document.getElementById("in").value;
+            var op = document.getElementById("show");
+            var newstr = inp.toUpperCase();
+            op.innerHTML = newstr;
+        }
+        //reverse the words
+        function reverseString(){
+            var inp = document.getElementById("in").value;
+            var splitstr = inp.split("");
+            //now string seperated and conevert to array\
+            var revstr = splitstr.reverse();
+            var newstr = revstr.join("");
+            document.getElementById("show").innerHTML = newstr;
+
+            // COMBINING ABOVE ALL METHODS IN ONE FORM
+
+           /* var inp= document.getElementById("in").value;
+            var op = document.getElementById("show");
+            var newstr = inp.split("").reverse().join("");
+            op.innerHTML = newstr;*/
+        }
+
+        function searchWord(){
+            var searchtxt = document.getElementById("search").value;
+            var text = document.getElementById("in").value;
+            // this method will split entire string by the string we provided and return array of split string 
+            // so -1 is to not consider the last array index
+            var count = text.split(searchtxt).length - 1;
+            document.getElementById("show").innerHTML = "The Word "+ searchtxt+ " occureance " + count;
+        }
+
+
+    </script>
+</head>
+<body>
+    <div class="container1">
+            <textarea id="in"></textarea>
+            <textarea id="show"></textarea>
+    </div>
+    <div class="container2">
+        <input type="button" value="Count Words" onclick="countWords()">
+        <input type="button" value="To Uppercase" onclick="convertUpper()">
+        <input type="button" value="Reverse Words" onclick="reverseString()">
+        <input type="button" value="Search word" onclick="searchWord()">
+    </div>
+    <div class="container3">
+        <input type="text" id="search">
+    </div>
+</body>
+</html>

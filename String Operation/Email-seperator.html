@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email-seperator</title>
+    <style>
+        textarea {
+            width: 95%;
+            height: 200px;
+            margin: 10px;
+        }
+
+        #in {
+            border: 2px solid red;
+        }
+
+        #op {
+            border: 2px solid green;
+        }
+
+        input[type="button"] {
+            width: 120px;
+            height: 50px;
+            background-color: green;
+            color: white;
+            font-weight: 100;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        input:hover {
+            background-color: crimson;
+            color: white;
+            font-weight: bolder;
+        }
+    </style>
+    <script type="text/javascript">
+        // to click button will work only once
+         var isclick = false;
+        function seperate() {
+            if(isclick == false){
+                var v = document.getElementById("in").value;
+                var array = v.split(",");
+                var List = new Array();
+                for (var i = 0; i < array.length; i++) {
+                    List[i] = array[i];
+                }
+                for (var i = 0; i < array.length; i++) {
+                    var prevdata = document.getElementById("op").innerHTML;
+                    document.getElementById("op").innerHTML = prevdata + List[i] + '\n';
+                }
+            }
+            isclick =true;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <textarea id="in" placeholder="Enter Email list">
+        </textarea>
+    </div>
+    <div class="container2">
+        <textarea id="op"></textarea>
+    </div>
+    <div>
+        <input type="button" value="Get Email List" onclick="seperate()">
+    </div>
+</body>
+
+</html>
