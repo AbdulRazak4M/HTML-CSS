@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Number Table</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .head{
+            background-color: black;
+            color: orange;
+            height: 50px;
+            font-size: 30px;
+            text-align: center ;
+            text-transform: uppercase;
+            padding: 10px;
+            border-bottom: 5px solid orangered;
+        }
+        .container1{
+            margin: 20px;
+            width:80%;
+        }
+        #num{
+            width: 500px;
+            height: 50px;
+            font-size: 30px;
+        }
+        input[type ="button"]{
+            background-color: rgb(49, 11, 110);
+            color: white;
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+    <script type="text/javascript">
+        function calculate(){
+            var number = parseInt(document.getElementById("num").value);
+            var result = 0;
+            for(var i = 1; i<=10; i++)
+            {
+                result=number * i;
+                document.write(number +"x"+ i +"="+ result+"<br/>");        
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <header class="head">
+        <p>Print Number Table</p>
+    </header>
+    <div class="container1">
+        <input type="text" id="num">
+        <input type="button" value="Print Table" onclick="calculate()">
+    </div>
+    <p id="output"></p>
+</body>
+</html>

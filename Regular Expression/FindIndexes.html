@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find word index</title>
+    <style>
+        input{
+            margin: 20px;
+        }
+        #in{
+            width: 70%;
+            height: 50vh;
+        }
+        #reg{
+            width: 70%;
+            height: 20vh;
+        }
+        input[type="button"]{
+            background-color: green;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            width: 150px;
+            height: 70px;
+        }
+    </style>
+    <script type="text/javascript">
+        function findWords(){
+            var str = document.getElementById("in").value;
+            var exep = document.getElementById("reg").value;
+            var regExp = new RegExp(exep,'g');
+            var result = regExp.exec(str);
+            console.log("Index is:" + result["index"]);
+            while(result["index"] != null)
+            {
+                result = regExp.exec(str);
+                console.log("Index is:" + result["index"]);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input type="text" id="in">
+    </div>
+    
+    <div>
+        <input type="text" id="reg">
+    </div>
+    <div>
+        <input type="button" value="Find Word" onclick="findWords()">
+    </div>
+</body>
+</html>
