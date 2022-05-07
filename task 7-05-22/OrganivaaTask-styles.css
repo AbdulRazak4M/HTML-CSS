@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Oxygen:wght@300&family=Roboto:ital,wght@1,300&display=swap');
+/*font-family: 'Oxygen', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Lora', serif;*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.container video{
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+}
+.container{
+    width: auto;
+    height: auto;
+}
+.logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 50px;
+    
+}
+div nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    font-size: 20px;
+}
+.links , .btn{
+    padding: 10px 20px;
+    color: white ;
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    border-radius: 50px;
+}
+.hero-content{
+    position: absolute;
+    justify-content: center;
+    top: 35%;
+    left: 35%;
+    max-width: 600px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    text-transform: capitalize;
+    text-align: left;
+}
+.btn{
+    width: 160px;
+    height: 40px;
+    margin:20px 20px 0px 0px;
+    padding: 0px 10px;
+    background-color:rgba(3, 113, 21, 0.941);
+    border: 1px solid rgba(255, 255, 255, 0.527);
+    color: white;
+}
+ul li a:hover{
+    font-size: 18px;
+    color: chartreuse;
+}
+button:hover{
+    width: 165px;
+    height: 44px;
+    font-size: large;
+}
+.col{
+    display: inline-block;
+    border: 2px solid rgba(202, 27, 27, 0.86);
+    margin: 0px;
+    padding: 15px;
+    height: 60px;
+    width: 337px;
+    margin-bottom: 40px;
+}
+.bg-green{
+    background-color: rgb(40, 220, 40);
+}
+.image, .content{
+    padding: 20px;
+    display: inline-block;
+}
+.content {
+   max-width: 700px;
+ 
+
+}
